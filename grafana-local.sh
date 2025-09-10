@@ -10,8 +10,9 @@ echo "deb [signed-by=/usr/share/keyrings/grafana.key] https://apt.grafana.com st
 sudo apt-get update
 # install 
 sudo apt-get install -y grafana
-sudo /bin/systemctl status grafana-server
-sudo /bin/systemctl start grafana-server
-# sudo /bin/systemctl enable grafana-server.service
 
+sudo /bin/systemctl start grafana-server
+sudo /bin/systemctl enable grafana-server.service
+
+sudo /bin/systemctl status grafana-server
 echo "Installed Succesfully"
