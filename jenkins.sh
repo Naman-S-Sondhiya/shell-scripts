@@ -10,8 +10,8 @@ echo "Updating package list..."
 sudo apt update
 
 # Install Java (Jenkins dependency)
-echo "Installing Java (OpenJDK 11)..."
-sudo apt install -y openjdk-11-jdk
+echo "Installing Java (OpenJDK 17)..."
+sudo apt install -y openjdk-17-jdk
 
 # Verify Java installation
 java -version
