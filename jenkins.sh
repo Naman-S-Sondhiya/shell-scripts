@@ -10,7 +10,8 @@ echo "Updating package list..."
 sudo apt update
 
 # Install Java (Jenkins dependency)
-echo "Installing Java (OpenJDK 17)..."
+echo "Installing Java (OpenJDK 17)..." 
+#change openjdk-17-jdk to openjdk-21-jdk for latest support of jenkins  
 sudo apt install -y openjdk-17-jdk
 
 # Verify Java installation
@@ -57,3 +58,4 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 echo "---- Jenkins installation completed successfully ----"
 echo "Access Jenkins at: http://<your-server-ip>:8080"
+ 
